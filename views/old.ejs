@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Noti Panel">
+    <meta property="og:description" content="Noti Panel for Bots">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=%D9%85%D8%B2%D8%A7%D9%84%20%D9%85%D8%A7%D8%AE%D8%AF%D9%85%D8%AA%D9%87%D8%A7%D8%B4">
+    <meta property="og:image:alt" content="Some bots panel">
+    <meta property="og:url" content="https://notipanel.onrender.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <title>Dashboard</title>
+</head>
+<body class="flex w-screen h-screen bg-gray-900">
+<!-- Nav -->
+<div class="flex flex-col items-center justify-left w-16 h-full overflow-hidden text-gray-400 bg-gray-900">
+    <a class="flex items-center justify-center mt-3" href="#">
+      <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
+      </svg>
+    </a>
+    <div class="flex flex-col items-center mt-3 border-t border-gray-700">
+      <a class="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+        <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+      </a>
+      <a class="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+        <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </a>
+      <a class="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+        <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+      </a>
+      <a class="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+        <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+        </svg>
+      </a>
+    </div>
+    <div class="flex flex-col items-center mt-2 border-t border-gray-700">
+      <a class="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+        <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+      </a>
+      <a class="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+        <svg class="w-6 h-6 stroke-current"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+        </svg>
+      </a>
+      <a class="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+        <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+        </svg>
+        <span class="absolute top-0 left-0 w-2 h-2 mt-2 ml-2 bg-indigo-500 rounded-full"></span>
+      </a>
+    </div>
+    <a class="flex items-center justify-center w-16 h-16 mt-auto bg-gray-800 hover:bg-gray-700 hover:text-gray-300" href="#">
+      <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </a>
+</div>
+<!-- Nav End -->
+<div class="absolute left-20 top-5 h-20">
+  <button data-modal-target="addPageModal" data-modal-show="addPageModal" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    Add Page
+  </button>
+  <div id="addPageModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 items-center justify-center hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <form action="#" class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <!-- Modal header -->
+              <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                      Add New Page
+                  </h3>
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="addPageModal">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                  </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-6 space-y-6">
+                  <div class="grid grid-cols-6 gap-6">
+                      <div class="col-span-6 sm:col-span-3">
+                          <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Page Name</label>
+                          <input type="text" name="first-name" id="first-name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="My Page" required="">
+                      </div>
+                      <div class="col-span-6 sm:col-span-3">
+                          <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Page id</label>
+                          <input type="text" name="last-name" id="last-name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123456789101112" required="">
+                      </div>
+                      <div class="col-span-6 sm:col-span-6">
+                          <label for="webhook" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Webhook url</label>
+                          <input type="text" name="webhook" id="webhook" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="https://example.com/webhook" required="">
+                      </div>
+                      <div class="col-span-6 sm:col-span-6">
+                        <label for="token" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Access Token</label>
+                        <input type="text" name="webhook" id="webhook" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="EAAMxUhUUBlUBAPWNeVCtMlkVkdbxy08a8vq....." required="">
+                      </div>
+                      <div class="col-span-6 sm:col-span-3">
+                          <label for="department" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Buttons Code</label>
+                          <div class="bg-gray-900 rounded-lg w-full h-40">
+                            <textarea class="border-transparent text-gray-300 text-sm font-mono bg-transparent resize-none w-full h-full" placeholder="Buttons code here..."></textarea>
+                          </div>
+                          
+                      </div>
+                      <div class="col-span-6 sm:col-span-3">
+                        <label for="department" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Welcome Screen</label>
+                        <textarea class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full h-40 p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 resize-none" placeholder="Hello User"></textarea>
+                    </div>
+                  </div>
+              </div>
+              <!-- Modal footer -->
+              <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save all</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+<div class="absolute left-20 inset-x-20 top-20">
+  <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-200 uppercase bg-gray-700">
+            <tr>
+                <th scope="col" class="px-6 py-4">
+                    Page Name
+                </th>
+                <th scope="col" class="px-6 py-4">
+                    Fan Count
+                </th>
+                <th scope="col" class="px-6 py-4">
+                    Status
+                </th>
+                <th scope="col" class="px-6 py-4">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+          <% for (const page of pages) { %>
+          <tr class="bg-gray-800 border-gray-700 hover:bg-gray-600">
+            <th scope="row" class="flex items-center px-6 py-4 whitespace-nowrap text-white">
+              <img class="w-10 h-10 rounded-full" src="https://graph.facebook.com/<%= page.id %>/picture?width=1024&height=1024&access_token=2712477385668128%7Cb429aeb53369951d411e1cae8e810640" alt="Page image">
+              <div class="pl-3">
+                <div class="text-base font-semibold"><%= page.name %></div>
+                <div class="font-normal text-gray-500">@<%= page.id %></div>
+              </div>  
+            </th>
+            <td class="px-6 py-4">
+              <%= page.likes %> Likes
+            </td>
+            <td class="px-6 py-4">
+              <div class="flex items-center">
+                <div class="h-2.5 w-2.5 rounded-full <%= page.status === 'Online' ? 'bg-green-500' : 'bg-red-500' %> mr-2"></div>
+                <%= page.status %>
+              </div>
+            </td>
+            <td class="px-6 py-4">
+              <!-- Modal toggle -->
+              <a href="#" data-page-id="<%= page.id %>" id="editPageBtn" type="button" data-modal-target="editUserModal" data-modal-show="editUserModal" class="font-medium text-blue-500 hover:underline">Edit page</a>
+            </td>
+          </tr>
+          <% } %>
+        </tbody>
+    </table>
+    <!-- Edit user modal -->
+    <div id="editUserModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 items-center justify-center hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <form action="#" class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Edit Page
+            </h3>
+            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="editUserModal">
+              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <div class="grid grid-cols-6 gap-6">
+              <div class="col-span-6 sm:col-span-3">
+                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Page Name</label>
+                <input type="text" name="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="My Page" required="">
+              </div>
+              <div class="col-span-6 sm:col-span-3">
+                <label for="id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Page ID</label>
+                <input type="text" name="id" id="id" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123456789101112" required="">
+              </div>
+              <div class="col-span-6 sm:col-span-6">
+                <label for="webhook" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Webhook URL</label>
+                <input type="text" name="webhook" id="webhook" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="https://example.com/webhook" required="">
+              </div>
+              <div class="col-span-6 sm:col-span-6">
+                <label for="access" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Access Token</label>
+                <input type="text" name="access" id="access" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="EAAMxUhUUBlUBAPWNeVCtMlkVkdbxy08a8vq....." required="">
+              </div>
+              <div class="col-span-6 sm:col-span-3">
+                <label for="buttons-code" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Buttons Code</label>
+                <div class="bg-gray-900 rounded-lg w-full h-40">
+                  <textarea name="buttons-code" class="border-transparent text-gray-300 text-sm font-mono bg-transparent resize-none w-full h-full" placeholder="Buttons code here..."></textarea>
+                </div>
+              </div>
+              <div class="col-span-6 sm:col-span-3">
+                <label for="welcome-screen" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Welcome Screen</label>
+                <textarea name="welcome-screen" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full h-40 p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 resize-none" placeholder="Hello User"></textarea>
+              </div>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save all</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+<script>
+// Get the "Edit page" button
+const editPageButtons = document.querySelectorAll('#editPageBtn');
+
+// Add event listener to each button
+editPageButtons.forEach(button => {
+  button.addEventListener('click', handleEditPage);
+});
+
+// Handle the click event
+function handleEditPage(event) {
+  event.preventDefault();
+  const editPageButton = event.target;
+  const pageId = editPageButton.getAttribute('data-page-id');
+  fetch('/pages')
+    .then(response => response.json())
+    .then(data => {
+      const pages = data.pages;
+
+      // Find the page with the matching ID
+      const page = pages.find(page => page.id === pageId);
+
+      if (page) {
+        // Populate the form fields with the page data
+        document.getElementById('name').value = page.name;
+        document.getElementById('id').value = page.id;
+        document.getElementById('access').value = page.access;
+        document.getElementById('webhook').value = page.webhook;
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+}
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

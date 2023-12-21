@@ -1,0 +1,22 @@
+{
+    "pages": [
+      {
+        "name": "Main",
+        "id": "facebook",
+        "access": "accmain",
+        "webhook": "https://main.com/webhook"
+      },
+      {
+        "name": "Panel Pal",
+        "id": "146015851939402",
+        "access": "ext2",
+        "webhook": "https://panalpaljs.ch62.repl.co/webhook"
+      },
+      {
+        "name": "Cloudy BOX",
+        "id": "137983892741988",
+        "access": "qwerty3",
+        "webhook": "https://cloudybox-js.ch62.repl.co/webhook"
+      }
+    ]
+  }

@@ -1,0 +1,7 @@
+@media (max-width: 640px) {
+    .mobile\:m-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
