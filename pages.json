@@ -17,6 +17,12 @@
         "id": "137983892741988",
         "access": "qwerty3",
         "webhook": "https://cloudybox-js.ch62.repl.co/webhook"
+      },
+      {
+        "name": "image generator",
+        "id": "125137270692770",
+        "access": "qwerty3",
+        "webhook": "https://imagesgeneratorbotjs.ch62.repl.co/webhook"
       }
     ]
   }
