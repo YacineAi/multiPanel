@@ -22,7 +22,7 @@
         "name": "images generate",
         "id": "216306344890967",
         "access": "qwerty3",
-        "webhook": "http://nodejs.marianebel175.repl.co/webhook"
+        "webhook": "https://visual-vistajs.marianebel175.repl.co/webhook"
       }
     ]
   }
