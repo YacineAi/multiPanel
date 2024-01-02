@@ -23,6 +23,12 @@
         "id": "216306344890967",
         "access": "qwerty3",
         "webhook": "https://visual-vistajs.marianebel175.repl.co/webhook"
-      }
-    ]
+      },
+      {
+        "name": "voiceai",
+        "id": "125137270692770",
+        "access": "qwerty3",
+        "webhook": "https://testtesttets.ch62.repl.co/webhook"
+      }   
+      ]
   }
