@@ -22,13 +22,13 @@
         "name": "visual vista",
         "id": "216306344890967",
         "access": "qwerty3",
-        "webhook": "https://c1de82b2-aea7-4333-b3a6-14348c1d0f1b-00-cihd67ki3snb.riker.replit.dev/webhook"
+        "webhook": "https://visual-vista.onrender.com/webhook"
       },
       {
         "name": "voiceai",
         "id": "125137270692770",
         "access": "qwerty3",
-        "webhook": "https://visual-vista.onrender.com/webhook"
+        "webhook": "https://df0b179a-1b90-43db-bb4b-a95cc649b563-00-3ntev5cyws6xg.kirk.replit.dev/webhook"
       }   
       ]
   }
