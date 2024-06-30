@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
+const bodyParser = require("body-parser");
 const request = require("request");
 const Botly = require("botly");
 const botly = new Botly({
@@ -12,8 +14,10 @@ const botly = new Botly({
 const pageData = require('./pages.json');
 app.use(express.static('views'));
 app.set('view engine', 'ejs');
-app.use(express.json({ verify: botly.getVerifySignature(process.env.APP_SECRET) }));
-app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.json({
+  verify: botly.getVerifySignature(process.env.APP_SECRET)
+}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/webhook", botly.router());
 app.get('/', (req, res) => {
   res.render('index', { pages: pageData.pages });
@@ -63,4 +67,6 @@ botly.on("postback", async (senderId, message, postback) => {
   }
 });
 
-app.listen(3000, () => { console.log(`App listening on port 3000`); });
+app.listen(port, () => {
+  console.log(`App listening on port ${port}`);
+});
