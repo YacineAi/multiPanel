@@ -1,40 +1,40 @@
 {
-    "pages": [
+   "pages":[
       {
-        "name": "Main",
-        "id": "facebook",
-        "access": "accmain",
-        "webhook": "https://main.com/webhook"
+         "name":"Main",
+         "id":"facebook",
+         "access":"accmain",
+         "webhook":"https://main.com/webhook"
       },
       {
-        "name": "Panel Pal",
-        "id": "146015851939402",
-        "access": "ext2",
-        "webhook": "https://a58c0338-d9ad-4cca-b7f9-d3d46fbf916e-00-24l1wnrkns4fc.worf.replit.dev/webhook"
+         "name":"Panel Pal",
+         "id":"146015851939402",
+         "access":"ext2",
+         "webhook":"https://a58c0338-d9ad-4cca-b7f9-d3d46fbf916e-00-24l1wnrkns4fc.worf.replit.dev/webhook"
       },
       {
-        "name": "Cloudy BOX",
-        "id": "137983892741988",
-        "access": "qwerty3",
-        "webhook": "https://e509b50d-e971-42de-bfbb-3786fc481d56-00-3ho5zz8i0ccd5.picard.replit.dev/webhook"
+         "name":"Cloudy BOX",
+         "id":"137983892741988",
+         "access":"qwerty3",
+         "webhook":"https://e509b50d-e971-42de-bfbb-3786fc481d56-00-3ho5zz8i0ccd5.picard.replit.dev/webhook"
       },
       {
-        "name": "visual vista",
-        "id": "275987978938660",
-        "access": "qwerty3",
-        "webhook": "https://visual-vista.onrender.com/webhook"
-      }                    
-  ,                                                                                                     {
-        "name": "voiceai",
-        "id": "125137270692770",
-        "access": "qwerty3",
-        "webhook": "https://testfbbot.glitch.me/webhook"
-      }   ,                                                                                
+         "name":"visual vista",
+         "id":"275987978938660",
+         "access":"qwerty3",
+         "webhook":"https://visual-vista.onrender.com/webhook"
+      },
       {
-        "name": "roberto",
-        "id": "272587999267841",
-        "access": "qwerty3",
-        "webhook": "https://rob-gpt.onrender.com/webhook"
-      }   
-      ]
-  }
+         "name":"voiceai",
+         "id":"125137270692770",
+         "access":"qwerty3",
+         "webhook":"https://testfbbot.glitch.me/webhook"
+      },
+      {
+         "name":"roberto",
+         "id":"272587999267841",
+         "access":"qwerty3",
+         "webhook":"https://rob-gpt.onrender.com/webhook"
+      }
+   ]
+}
